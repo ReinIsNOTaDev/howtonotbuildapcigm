@@ -1,0 +1,30 @@
+Let's make a game!
+Name: How to NOT build a Computer
+By: Rein
+desc: <#8B0000><b>WARNING: this project is still in the starting stages, And might mostly have errors.</b></#><//>Version: 1 Revision A Pre-Alpha
+Settings
+Layout
+  *resources
+    contains:Resources
+    header:These are your resources.
+  *buildings
+    contains:Buildings
+    header:These are things you can build.
+    tooltip origin:left
+  *unlockables
+    contains:Upgrades, Achievements
+    names:hide
+Resources
+  *statres1
+  *statres2
+  *influence
+  *tech
+  *money
+  *bugs
+Buildings
+  *staticbuilding
+  *factory
+  *cpufactory
+  *gpufactory
+  *ramfactory
+  *casefactory
