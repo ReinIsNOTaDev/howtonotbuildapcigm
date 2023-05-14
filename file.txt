@@ -1,7 +1,7 @@
 Let's make a game!
 Name: How to NOT build a Computer
 By: Rein
-desc: <#8B0000><b>WARNING: this project is still in the starting stages, And might mostly have errors.</b></#><//>Version: 1 Revision A Pre-Alpha
+desc: <#8B0000><b>WARNING: this project is still in the starting stages, And might mostly have errors.</b></#><//>Version: 1 Revision B Pre-Alpha
 Settings
 Layout
   *resources
@@ -23,8 +23,28 @@ Resources
   *bugs
 Buildings
   *staticbuilding
+      tag:static
+      on dostatres1:
+          if statres1 is 1 toast testa
+          if statres1 is 2 toast testb
+          if statres1 is 3 toast testc
+      end
   *factory
   *cpufactory
   *gpufactory
   *ramfactory
   *casefactory
+Upgrades
+  *pc1choice
+      Name:Buy Components
+      desc:How to ACTUALLY Build A Computer
+  *pc2choice
+      Name:Buy It Used
+      desc:Not the best Plan, But it's cheap!
+      on earn:
+          earn (random(1,3)) statres1
+          do dostatres1 with tag:static
+      end
+  *pc3choice
+      Name:Make Your Own Compenents
+      desc:Uhh, Why?
